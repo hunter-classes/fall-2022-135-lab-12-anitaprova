@@ -1,10 +1,10 @@
 #include <iostream>
 #include <vector>
 
-vector<int> makeVector(int n) {
-	vector<int> v;	
+std::vector<int> makeVector(int n) {
+	std::vector<int> v;	
 	for (int i = 0; i < n; i++) {
-		v.push(n);
+		v.push_back(n);
 	}
 	
 	return v;
