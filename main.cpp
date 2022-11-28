@@ -2,6 +2,7 @@
 #include "vectors.h"
 #include "optimism.h"
 #include "fusion.h"
+#include "pairwise.h"
 
 int main() {
 	//TASK A
@@ -16,7 +17,6 @@ int main() {
 	goodVibes(vibes);
 
 	//TASK C
-	
 	std::vector<int> v1{1,2,3};
 	std::vector<int> v2{4,5};
 
@@ -24,7 +24,17 @@ int main() {
 	
 	for(int i = 0; i < v1.size(); i++) {
 		std::cout << v1[i] << std::endl;
-	}	
-	
+	}
+	std::cout << "\n";	
+
+	//TASK D
+	std::vector<int> v3{1,2,3};
+	std::vector<int> v4{4,5};
+
+	std::vector<int> sum = sumPairWise(v3, v4);
+	for (int i = 0; i < sum.size(); i++) {
+		std::cout << sum[i] << std::endl;
+	}
+
 	return 0;
 }
