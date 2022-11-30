@@ -29,7 +29,7 @@ int main() {
 
 	//TASK D
 	std::vector<int> v3{1,2,3};
-	std::vector<int> v4{4,5};
+	std::vector<int> v4{};
 
 	std::vector<int> sum = sumPairWise(v3, v4);
 	for (int i = 0; i < sum.size(); i++) {
