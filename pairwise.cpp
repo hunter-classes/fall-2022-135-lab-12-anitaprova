@@ -11,10 +11,14 @@ Makes a vector
 
 std::vector<int> sumPairWise(std::vector<int> &v1, std::vector<int> &v2) {
 	std::vector<int> v;
-	if(v2.size() != 0) {
-		for (int i = 0; i < v1.size(); i++) {
+	for (int i = 0; i < v1.size(); i++) {
+		if(i >= v2.size()) {
+			v.push_back(v1[i]);
+		}
+		else {
 			v.push_back(v1[i] + v2[i]);
 		}
 	}
+	
 	return v;
 }
