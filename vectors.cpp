@@ -1,3 +1,12 @@
+/*
+Author: Anita Prova
+Course: CSCI-135
+Instructor: Mike Zamansky
+Assignment: Lab 12
+
+Makes a vector
+*/
+
 #include <iostream>
 #include <vector>
 
