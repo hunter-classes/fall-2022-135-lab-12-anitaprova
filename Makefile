@@ -1,6 +1,8 @@
 main: main.o vectors.o optimism.o fusion.o pairwise.o
 	g++ -o main main.o vectors.o optimism.o fusion.o pairwise.o
 
+main.o: main.cpp vectors.h optimism.h fusion.h pairwise.h
+
 vectors.o: vectors.cpp vectors.h
 
 optimism.o: optimism.cpp optimism.h
