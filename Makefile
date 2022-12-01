@@ -14,7 +14,7 @@ pairwise.o: pairwise.cpp pairwise.h
 tests: tests.o vectors.o optimism.o fusion.o pairwise.o
 	g++ -o tests tests.o vectors.o optimism.o fusion.o pairwise.o 
 
-tests.o: doctest.h vectors.h optimism.h fusion.h pairwise.h
+tests.o: tests.cpp doctest.h vectors.h optimism.h fusion.h pairwise.h
 
 clean:
 	rm -f main tests main.o tests.o vectors.o optimism.o fusion.o pairwise.o
