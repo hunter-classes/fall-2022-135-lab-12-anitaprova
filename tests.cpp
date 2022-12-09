@@ -17,6 +17,11 @@ TEST_CASE("TASK B") {
 	std::vector<int> result = goodVibes(v);
 	std::vector<int> expected{1, 2, 3, 4, 6};
 	CHECK(result == expected);
+
+	std::vector<int> v2{0, 2, -11, 54, -69, 21, -26};
+	std::vector<int> result2 = goodVibes(v2);
+	std::vector<int> expected2{0, 2, 54, 21};
+	CHECK(result2 == expected2);
 }
 
 TEST_CASE("TASK C") {
